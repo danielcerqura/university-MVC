@@ -8,7 +8,6 @@
     <body> 
         <?php
             $Cont = 1;
-            $b = $a . "World!";
             foreach ($datos as $dato) {
                 echo "Veterinario Registrado número : " . $Cont;
                 echo $dato["codigo_veterinario"]."<br/>";
@@ -16,6 +15,8 @@
                 echo $dato["direccion_domicilio_veterinario"]."<br/>";
                 echo $dato["telefono_veterinario"]."<br/>";
                 echo $dato["correo_veterinario"]."<br/>";
+                "<br/>"
+                "<br/>"
                 ++$Cont
             }
         ?>
