@@ -5,15 +5,18 @@
         <meta charset="UTF-8" />
         <title>Veterinario</title>
     </head>
-    <body>
-        
+    <body> 
         <?php
+            $Cont = 1;
+            $b = $a . "World!";
             foreach ($datos as $dato) {
+                echo "Veterinario Registrado número : " . $Cont;
                 echo $dato["codigo_veterinario"]."<br/>";
                 echo $dato["nombre_veterinario"]."<br/>";
                 echo $dato["direccion_domicilio_veterinario"]."<br/>";
                 echo $dato["telefono_veterinario"]."<br/>";
                 echo $dato["correo_veterinario"]."<br/>";
+                ++$Cont
             }
         ?>
     </body>
